@@ -15,11 +15,13 @@ This mini-project demonstrate the use of Visitor Design pattern. The RIT Scholar
 -  `Visitable`: An interface defining the accept method for elements that can be visited by a visitor. In this project, the Student class implements this interface to accept different types of visitor evaluations.
 - `Visitor`: An interface defining a visit method for performing operations on elements implementing the Visitable interface. It specifies how a visitor should interact with a student, focusing on the abstract action rather than the specifics.
 - `ScholarshipVisitor`: Implements the Visitor interface to evaluate if a student is eligible for a scholarship based on their GRE score. If the score is above 310, the student is awarded a 30% scholarship on tuition fees.
-	- `PerformanceEvaluationVisitor`: Another implementation of the Visitor interface, which assesses a student's GPA to determine eligibility for a bonus. Students with a GPA above 3.75 receive an additional 5% bonus on their scholarship.
+- `PerformanceEvaluationVisitor`: Another implementation of the Visitor interface, which assesses a student's GPA to determine eligibility for a bonus. Students with a GPA above 3.75 receive an additional 5% bonus on their scholarship.
 
 ## Usage
 Instantiate `Student` objects with their respective names and the scores (GRE or GPAs). Apply `ScholarshipVisitor` to students with GRE scores to calculate scholarships and `PerformanceEvaluationVisitor` for students with GPAs to calculate bonuses.
 
+## Class Diagram
+![Class Diagram - RIT Scholarship System](ClassDiagram-Homework07.png)
 
 
 
